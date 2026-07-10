@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://taskflow-backend-production-4845.up.railway.app/api/v1';
+const API_URL = 'https://taskflow-backend-lime.vercel.app/api/v1';
 
 const api = axios.create({
   baseURL: API_URL,
@@ -8,6 +8,7 @@ const api = axios.create({
     'Content-Type': 'application/json',
   },
 });
+
 
 // Task APIs
 export const getTasks = (params) => api.get('/tasks', { params });
